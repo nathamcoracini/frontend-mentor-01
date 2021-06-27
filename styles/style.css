@@ -1,0 +1,169 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 0.9375rem;
+}
+
+.content {
+    width: 1080px;
+    height: 446px;
+    background-color: hsl(244, 38%, 16%);
+
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.left-container {
+    padding: 4rem;
+    float: left;
+    width: 50%;
+}
+
+.left-container h1 span {
+    color: hsl(277, 64%, 61%)
+}
+
+.left-container h1 {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+    width: 75%;
+}
+
+.left-container .bottom .light {
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: capitalize;
+}
+
+.left-container .bottom h3 {
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+.left-container .bottom {
+    width: 400px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 1.6;
+    font-size: 0.8rem;
+    width: 65%;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 4rem;
+}
+
+.bottom span {
+    color: hsla(0, 0%, 100%, 0.6);
+    display: inline-block;
+    margin-right: 3.0rem;
+}
+
+.bottom div {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+.bottom h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.right-container {
+    background-image: url("../images/image-header-desktop.jpg");
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: relative;
+    background-size: cover;
+}
+
+.right-container:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: hsla(277, 64%, 61%, 0.6);
+  }
+
+@media (max-width: 600px) {
+    
+    .left-container {
+        width: 100%;
+        height: 60%;
+        padding: 0;
+        float:none;
+        text-align: center;
+    }
+    
+    .left-container h1 {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .left-container .bottom {
+        width: 100%;
+    }
+
+    .right-container {
+        width: 100%;
+        height: 40%;
+        float:none;
+    }
+    .content {
+        width: 90%;
+        height: 80%;
+        position: absolute;
+        overflow: auto;
+    }
+    p {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    .bottom {
+        
+        position: relative;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .bottom h3 {
+        width: 100%;
+    }
+    .bottom span {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+
+}
+
